@@ -2,8 +2,11 @@
   <dictionary name="Administrator">
     <words>
       <w>angularjs</w>
+      <w>bcrypt</w>
       <w>pinyougou</w>
       <w>rogercw</w>
+      <w>sameorigin</w>
+      <w>shoplogin</w>
     </words>
   </dictionary>
 </component>

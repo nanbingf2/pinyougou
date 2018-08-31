@@ -1,5 +1,5 @@
 app.controller("typeTemplateController",function($scope,$controller,typeTemplateService,
-                                                 brandService,specificationService){
+                                        brandService,specificationService){
 
     /*继承父模块*/
     $controller("baseController",{$scope:$scope});
@@ -78,4 +78,6 @@ app.controller("typeTemplateController",function($scope,$controller,typeTemplate
     $scope.deleteOption=function(index){
         $scope.typeTemplate.customAttributeItems.splice(index,1);
     }
+
+
 });

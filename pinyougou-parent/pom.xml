@@ -10,6 +10,7 @@
         <module>../pinyougou-sellergoods-interface</module>
         <module>../pinyougou-sellergoods-service</module>
         <module>../pinyougou-manager-web</module>
+        <module>../pinyougou-shop-web</module>
     </modules>
     <groupId>com.rogercw.pinyougou</groupId>
     <artifactId>pinyougou-parent</artifactId>
