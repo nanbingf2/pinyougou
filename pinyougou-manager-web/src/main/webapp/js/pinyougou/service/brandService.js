@@ -19,4 +19,8 @@ app.service("brandService",function($http){
     this.deleteBatch=function(ids){
         return $http.get("../brand/delete.do?ids="+ids);
     }
+
+    this.selectOptionList=function(){
+        return $http.get("../brand/selectOptionList.do");
+    }
 });

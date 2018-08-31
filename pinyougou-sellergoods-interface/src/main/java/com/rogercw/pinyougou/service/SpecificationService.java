@@ -1,5 +1,6 @@
 package com.rogercw.pinyougou.service;
 import java.util.List;
+import java.util.Map;
 
 import com.rogercw.pinyougou.custom.SpecificationCustom;
 import com.rogercw.pinyougou.pojo.Specification;
@@ -51,5 +52,11 @@ public interface SpecificationService {
 	 * @return
 	 */
 	public PageResult findPage(Specification specification, int pageNum, int pageSize);
+
+	/**
+	 * 查询规格列表
+	 * @return
+	 */
+	List<Map> selectOptionList();
 	
 }

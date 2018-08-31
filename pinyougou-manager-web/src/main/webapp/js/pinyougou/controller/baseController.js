@@ -29,6 +29,23 @@ app.controller("baseController",function($scope){
             //移除
             $scope.selectIds.splice(index,1);
         }
+    };
+
+
+    /*将JSON字符串数据中的某个属性，将其拼接成字符串
+    * json:要转换的JSON字符串，key:要转换的属性
+    * */
+    $scope.jsonToString=function(json,key){
+        //将JSON字符串转换为数组
+        var array=JSON.parse(json);
+        var value="";
+        for (var i=0;i<array.length;i++){
+            if (i>0){
+                value+=",";
+            }
+            value+=array[i][key];
+        }
+        return value;
     }
 
 });

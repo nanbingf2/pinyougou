@@ -66,9 +66,9 @@ public class TypeTemplateController {
         }
     }
 
-    @RequestMapping("/pageSearch")
-    public PageResult pageSearch(@RequestBody Template typeTemplate,int page,int size){
-        return typeTemplateService.findPage(typeTemplate,page,size);
+    @RequestMapping("/findPage")
+    public PageResult findPage(@RequestBody Template typeTemplate,int page,int rows){
+        return typeTemplateService.findPage(typeTemplate,page,rows);
     }
 
 }

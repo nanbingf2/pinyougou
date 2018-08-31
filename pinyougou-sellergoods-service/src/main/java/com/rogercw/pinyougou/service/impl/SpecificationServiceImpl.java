@@ -1,5 +1,6 @@
 package com.rogercw.pinyougou.service.impl;
 import java.util.List;
+import java.util.Map;
 
 import com.rogercw.pinyougou.custom.SpecificationCustom;
 import com.rogercw.pinyougou.mapper.SpecificationOptionMapper;
@@ -129,5 +130,10 @@ public class SpecificationServiceImpl implements SpecificationService {
 		Page<Specification> page= (Page<Specification>)specificationMapper.selectByExample(example);		
 		return new PageResult(page.getResult(),page.getTotal());
 	}
-	
+
+	@Override
+	public List<Map> selectOptionList() {
+		return specificationMapper.selectOptionList();
+	}
+
 }

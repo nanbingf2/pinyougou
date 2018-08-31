@@ -4,6 +4,7 @@ import com.rogercw.page.PageResult;
 import com.rogercw.pinyougou.pojo.Brand;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: rogercw
@@ -50,4 +51,6 @@ public interface BrandService {
      * @param ids
      */
     void delete(Long[] ids);
+
+    List<Map> selectOptionList();
 }
